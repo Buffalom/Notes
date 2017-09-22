@@ -1,0 +1,169 @@
+@import 'libs/reset';
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@charset "UTF-8";
+@import url('font-awesome.min.css');
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
+
+
+// Basics
+	body {
+		background: $palette_bg;
+		font-family: $font_family;
+	}
+
+	body, input, select, textarea {
+		color: $palette_fg;
+		font-family: $font-family;
+		font-size: $font_size;
+		font-weight: $font_weight;
+		line-height: 1.75em;
+	}
+
+	a {
+		transition: color #{$duration_transition} ease-in-out;
+		transition: background-color #{$duration_transition} ease-in-out;
+		border: none;
+		color: inherit;
+		text-decoration: none;
+
+		&:hover {
+			border-bottom: dotted 1px $palette_border2;
+			color: $palette_fg-light !important;
+		}
+	}
+
+	strong, b {
+		color: $palette_fg-bold;
+		font-weight: $font_weight-bold;
+	}
+
+	em, i {
+		font-style: italic;
+	}
+
+	p {
+		margin: 0 0 $size_element-margin 0;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: $palette_fg-bold;
+		font-weight: $font_weight-bold;
+		font-size: $font_size;
+		line-height: 1.5em;
+		margin: 0 0 ($size_element-margin * 0.25) 0;
+
+		a {
+			border: 0;
+			color: inherit;
+			text-decoration: none;
+		}
+	}
+
+	h1 {
+		font-size: $font_size_h1;
+	}
+
+	h2 {
+		font-size: $font_size_h2;
+		line-height: 1.5em;
+	}
+
+	h3 {
+		font-size: $font_size_h3;
+		line-height: 1.5em;
+	}
+
+	h4 {
+		font-size: $font_size_h4;
+		line-height: 1.5em;
+	}
+
+	h5 {
+		font-size: $font_size_h5;
+		line-height: 1.5em;
+	}
+
+	h6 {
+		font-size: $font_size_h6;
+		line-height: 1.5em;
+	}
+
+	sub {
+		font-size: $font_size_sub;
+		position: relative;
+		top: 0.5em;
+	}
+
+	sup {
+		font-size: $font_size_sup;
+		position: relative;
+		top: -0.5em;
+	}
+
+	hr {
+		border: 0;
+		border-bottom: solid $size_border-width $palette_border;
+		margin: $size_element-margin 0;
+
+		&.major {
+			margin: ($size_element-margin * 1.5) 0;
+		}
+	}
+
+	blockquote {
+		border-left: solid ($size_border-width * 4) $palette_border2;
+		font-style: italic;
+		margin: 0 0 $size_element-margin 0;
+		padding: 0.5em 0 0.5em 2em;
+	}
+
+	code {
+		background: #555;
+		border-radius: $size_border-radius;
+		color: #fff;
+		font-family: $font_family-fixed;
+		font-size: $font_size_code;
+		margin: 0 0.25em;
+		padding: 0.25em 0.65em;
+	}
+
+	pre {
+		font-family: $font_family-fixed;
+		font-size: $font_size_pre;
+		margin: 0 0 $size_element-margin 0;
+
+		code {
+			-webkit-overflow-scrolling: touch;
+			display: block;
+			line-height: 1.5em;
+			overflow-x: auto;
+			padding: 1em 1.5em;
+		}
+	}
+
+	.align-left {
+		text-align: left;
+	}
+
+	.align-center {
+		text-align: center;
+	}
+
+	.align-right {
+		text-align: right;
+	}
+
+	.float-left {
+		float: left;
+	}
+
+	.float-right {
+		float: right;
+	}
+
+	.clear-float {
+		overflow: hidden;
+	}
+

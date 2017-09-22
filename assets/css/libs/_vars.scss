@@ -1,0 +1,55 @@
+// Size.
+	$size_border-radius:		5px;
+	$size_border-width:		2px;
+	$size_element-height:		2.75em;
+	$size_element-margin:		2.25em;
+
+// Duration
+	$duration_transition:	0.2s;
+
+// Font
+	$font_family:					'Lato', sans-serif;
+	$font_family-fixed:		'Source Code Pro', monospace;
+	$font_weight:					400;
+	$font_weight-bold:		700;
+	$font_size:						18px;
+	$font_size_h1:				$font_size * 2.2;
+	$font_size_h2:				$font_size * 2;
+	$font_size_h3:				$font_size * 1.75;
+	$font_size_h4:				$font_size * 1.25;
+	$font_size_h5:				$font_size * 0.9;
+	$font_size_h6:				$font_size * 0.7;
+	$font_size_sub:				$font_size * 0.8;
+	$font_size_sup:				$font_size * 0.8;
+	$font_size_code:			$font_size * 0.9;
+	$font_size_pre:				$font_size * 0.9;
+
+// Palette
+	$palette_bg:							#fff;
+	$palette_fg:							#888;
+	$palette_fg-bold:					#777;
+	$palette_fg-light:				#aaa;
+	$palette_border:					#f4f4f4;
+	$palette_border-bg:				#fafafa;
+	$palette_border2:					#e4e4e4;
+	$palette_border2-bg:			#f4f4f4;
+	$palette_border3:					#e0e0e0;
+	$palette_border3-bg:			#eaeaea;
+	$palette_border-dark:			#dddddd;
+	$palette_border-dark-bg:	#cecece;
+
+	$palette_accent1_bg:				rgba(2,5,12,0.92);
+	$palette_accent1_fg-bold:		#ffffff;
+	$palette_accent1_fg:					mix($palette_accent1_bg, #ffffff, 25%);
+	$palette_accent1_fg-light:		mix($palette_accent1_bg, #ffffff, 40%);
+
+	$palette_accent2_bg:				#F46E56;
+	$palette_accent2_fg-bold:		#ffffff;
+	$palette_accent2_fg:					mix($palette_accent2_bg, #ffffff, 25%);
+	$palette_accent2_fg-light:		mix($palette_accent2_bg, #ffffff, 40%);
+
+	$palette_header_bg:					rgba(2,5,12,0.92);
+	$palette_header_fg-bold:		#ffffff;
+	$palette_header_fg:						mix($palette_header_bg, #ffffff, 25%);
+	$palette_header_fg-light:			mix($palette_header_bg, #ffffff, 40%);
+	$palette_header_border:				mix($palette_header_bg, #ffffff, 90%);
