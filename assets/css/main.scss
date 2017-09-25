@@ -3,7 +3,6 @@
 @import 'libs/functions';
 @import 'libs/mixins';
 @charset "UTF-8";
-@import url('font-awesome.min.css');
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
 
 
@@ -30,7 +29,7 @@
 
 		&:hover {
 			border-bottom: dotted 1px $palette_border2;
-			color: $palette_fg-light !important;
+			color: $palette_fg-light;
 		}
 	}
 
@@ -167,3 +166,101 @@
 		overflow: hidden;
 	}
 
+
+
+// Main
+	body {
+		min-height: 100vh;
+		
+		.main {
+			padding: 10px;
+
+			section div {
+				min-width: 257px;
+				float: left;
+				width: 48%;
+				margin: 1%;
+				
+				@media screen and (max-width: 600px) {
+					width: 100%;
+					margin: 10px 0;
+				}
+
+				&.list {
+					table {
+						width: 100%;
+
+
+						thead {
+							tr {
+								border-bottom: solid 1px black;
+
+								th {
+									text-align: left;
+									font-weight: bold;
+								}
+							}
+						}
+
+						tbody {
+							tr {
+
+								&:nth-child(odd) {
+									background-color: rgba(0, 0, 0, 0.05);
+								}
+
+								&:hover {
+									background-color: rgba(0, 0, 0, 0.1);
+								}
+								
+								td {
+									&:nth-child(2) {
+										text-align: right;
+									}
+
+									a {
+										margin: 0 5px;
+
+										&:hover {
+											color: white;
+											text-decoration: underline;
+										}
+										
+										svg {
+											&:hover {
+
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+				&.note {
+					input, textarea {
+						width: 100%;
+						padding: 2px;
+
+						&:focus {
+							outline: none;
+						}
+					}
+					#title {
+						margin-bottom: 10px;
+						background-color: transparent;
+						border: none;
+						border-bottom: solid 2px #95D6D6;
+					}
+					#note {
+						background-color: mix(transparent, white, 80);
+						border: solid 2px #95D6D6;
+						border-radius: 6px;
+						resize: vertical;
+						height: 200px;
+					}
+				}
+			}
+		}
+	}

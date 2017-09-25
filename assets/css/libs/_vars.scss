@@ -25,8 +25,8 @@
 	$font_size_pre:				$font_size * 0.9;
 
 // Palette
-	$palette_bg:							#fff;
-	$palette_fg:							#888;
+	$palette_bg:							linear-gradient(to bottom, #25b5ba 0%,#25b5ba 100%);
+	$palette_fg:							#222;
 	$palette_fg-bold:					#777;
 	$palette_fg-light:				#aaa;
 	$palette_border:					#f4f4f4;
